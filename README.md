@@ -30,7 +30,7 @@ pip install --index-url https://test.pypi.org/simple/ pubmed-paper-finder
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/pubmed-paper-finder.git
+   git clone [https://github.com/yourusername/pubmed-paper-finder.git](https://github.com/smritimishra07/Pud_Med_Research_Tool.git)
    cd pubmed-paper-finder
    ```
 
