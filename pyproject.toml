@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pubmed-paper-finder"
+version = "0.1.0"
+description = "A tool to fetch research papers from PubMed with pharmaceutical/biotech company affiliated authors"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{include = "pubmed_paper_finder"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+typing-extensions = "^4.9.0"
+pandas = "^2.1.4"
+beautifulsoup4 = "^4.12.2"
+lxml = "^5.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+black = "^23.11.0"
+mypy = "^1.7.1"
+isort = "^5.12.0"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_paper_finder.cli:main"
